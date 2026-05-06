@@ -1,0 +1,16 @@
+services:
+  # Static Site Service
+  type: web
+  name: frontend-gestion-documental
+  env: static
+  buildCommand: "npm run build"
+  staticPublishPath: dist
+  routes:
+    - type: rewrite
+      source: /api/(.*)
+      destination: https://gestiondocumental-1.onrender.com/api/$1
+  envVars:
+    - key: NODE_VERSION
+      value: 18
+    - key: VITE_API_URL
+      value: https://gestiondocumental-1.onrender.com
