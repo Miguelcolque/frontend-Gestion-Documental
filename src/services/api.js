@@ -1,4 +1,4 @@
-const API_BASE_URL = '/api';
+const API_BASE_URL = 'https://gestiondocumental-1.onrender.com/api';
 
 const apiService = {
   async fetchData(endpoint) {
