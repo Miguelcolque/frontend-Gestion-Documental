@@ -33,19 +33,19 @@ const apiService = {
   },
 
   async getDocumentoSolicitados() {
-    return await this.fetchData('/DocumentoSolicitadoes/ListarTodos');
+    return await this.fetchData('/DocumentoSolicitados/ListarTodos');
   },
 
   async getEntregaDocumentos() {
-    return await this.fetchData('/EntregaDocumentoes');
+    return await this.fetchData('/EntregaDocumentos');
   },
 
   async getTipoDocumentos() {
-    return await this.fetchData('/TipoDocumentoes');
+    return await this.fetchData('/TipoDocumentos');
   },
 
   async getSolicitudDocumentaciones() {
-    return await this.fetchData('/SolicitudDocumentacions');
+    return await this.fetchData('/SolicitudDocumentaciones');
   },
 
   async getPacienteDocs() {
