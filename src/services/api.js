@@ -1,5 +1,8 @@
 const API_BASE_URL = 'https://gestiondocumental-1.onrender.com/api';
 
+// Debug para verificar que se está usando la URL correcta
+console.log('API_BASE_URL:', API_BASE_URL);
+
 const apiService = {
   async fetchData(endpoint) {
     try {
